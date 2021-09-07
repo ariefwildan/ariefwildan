@@ -1,20 +1,31 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
 }
 li {
     list-style: none;
-    display: inline;
 }
 .header {
-    margin: 5px 10px 0px 10px;
-    padding: 5px;
-    border-bottom: orange 1px solid;
+    background-color: lightblue;
+    height: 50px;
+    border-bottom: 1px solid blue;
 }
 .logo {
-    position: static;
     float: left;
+    margin: 5px;
+    height: 40px;
+    width: 120px;
+}
+.logo img {
+    display: block;
+    padding-top: 8px;
+    margin: auto;
 }
 .menu {
     float: right;
+    background-color: yellowgreen;
+    height: 50px;
+}
+.menu li {
+    display: inline;
+    margin-right: 10px;
 }
