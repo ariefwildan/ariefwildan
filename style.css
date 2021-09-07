@@ -4,6 +4,9 @@ body{
 li {
     list-style: none;
 }
+a:link {
+    text-decoration: none;
+}
 .header {
     background-color: lightblue;
     height: 50px;
@@ -22,10 +25,15 @@ li {
 }
 .menu {
     float: right;
-    background-color: yellowgreen;
     height: 50px;
+    color: crimson;
 }
 .menu li {
     display: inline;
     margin-right: 10px;
+    padding: 6px;
+}
+.menu li:hover {
+    border-bottom: 2px solid blue;
+    padding: 5px 6px
 }
