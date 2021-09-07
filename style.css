@@ -10,7 +10,7 @@ a:link {
 .header {
     background-color: lightblue;
     height: 50px;
-    border-bottom: 1px solid blue;
+    border-bottom: 2px solid rgb(0, 140, 255);
 }
 .logo {
     float: left;
