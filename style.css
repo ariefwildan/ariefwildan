@@ -1,7 +1,8 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
-    max-width: 600px;
+    max-width: 720px;
+    border: 1px solid rgb(214, 214, 214);
 }
 li {
     list-style: none;
@@ -49,6 +50,7 @@ a:link {
 .profil {
     width: 100%;
     text-align: center;
+    padding-top: 0px;
 }
 .profil img {
     border-radius: 50%;
@@ -57,18 +59,51 @@ a:link {
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
-.portofolio {
-    background-color: darkgray;
+p#nama {
+    max-width: 50%;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 600;
+}
+p#kota {
+    max-width: 65%;
+    margin: 10px auto;
+    font-size: 14px;
+}
+p#deskripsi {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
 }
 .portofolio h2 {
     text-align: center;
 }
+.row1 {
+    height: 100px;
+    padding-top: 20px;
+    background-color: rgb(211, 255, 248);
+}
 .column1, .column2, .column3, .column4 {
     width: 25%;
-    float: left;
-    text-align: center;
+    max-width: 25%;
+    display: inline;
+    margin: 38px;
 }
 .column1 img, .column2 img, .column3 img, .column4 img {
-    width: 125px;
-    height: 50px;
+    width: 100px;
+    height: 62px;
+}
+.row2 {
+    height: 204px;
+    padding-top: 20px;
+    background-color: rgb(211, 255, 248);
+}
+.column5, .column6, .column7, .column8, .column9, .column10 {
+    max-width: 33%;
+    display: inline;
+    margin: 3px;
+}
+.column5 img, .column6 img, .column7 img, .column7 img, .column7 img, .column img {
+    width: 230px;
+    height: 184px;
 }
