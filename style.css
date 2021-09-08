@@ -1,5 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 600px;
 }
 li {
     list-style: none;
@@ -34,6 +36,10 @@ a:link {
     padding: 6px;
 }
 .menu li:hover {
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(48, 103, 148);;
     padding: 5px 6px
+}
+.contents {
+    width: 550px;
+    max-width: 550px;
 }
