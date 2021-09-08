@@ -1,16 +1,20 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    max-width: 600px;
 }
 li {
     list-style: none;
 }
 a:link {
-    text-decoration: none;
+    text-decoration: none
 }
 .header {
-    background-color: lightblue;
     height: 50px;
-    border-bottom: 2px solid rgb(0, 140, 255);
+    border-bottom: double 2px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(0, 247, 255),#1100ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 .logo {
     float: left;
@@ -26,14 +30,45 @@ a:link {
 .menu {
     float: right;
     height: 50px;
-    color: crimson;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.menu ul {
+    margin-top: 17px;
 }
 .menu li {
     display: inline;
-    margin-right: 10px;
+    margin: auto;
     padding: 6px;
 }
 .menu li:hover {
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #1100ff;
     padding: 5px 6px
+}
+.profil {
+    width: 100%;
+    text-align: center;
+}
+.profil img {
+    border-radius: 50%;
+    border: double 2px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(0, 247, 255),#1100ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.portofolio {
+    background-color: darkgray;
+}
+.portofolio h2 {
+    text-align: center;
+}
+.column1, .column2, .column3, .column4 {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.column1 img, .column2 img, .column3 img, .column4 img {
+    width: 125px;
+    height: 50px;
 }
