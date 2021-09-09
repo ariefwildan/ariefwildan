@@ -147,9 +147,9 @@ p#deskripsi {
     width: 100%;
     min-height: 500px;
     text-align: center;
-    #background-color: rgb(0, 247, 255);
 }
 .team1 {
+    width: 189px;
     max-width: 100%;
     float: left;
     text-align: center;
