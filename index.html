@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Latihan Membuat Portofolio</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="/style.css">
-        <script src="slideshow.js"></script>
     </head>
     <body>
         <div id="header" class="header">
@@ -16,11 +16,11 @@
             <div class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portofolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
                 </ul>
             </div>
         </div>
@@ -28,22 +28,14 @@
             <h2>About</h2>
             <img src="/img/pp.jpg">
             <p id="nama">Arief Wildan Hadiansyah</p>
-            <p id="kota">📌 Bandung, Jawa Barat, Maret 1989</p>
+            <p class="kota">📌 Bandung, Jawa Barat, <span id="umur">0</span> tahun</p>
             <p id="deskripsi"><strong>Lorem Ipsum</strong> is simply dummy text of the <em>printing and typesetting</em> industry. <u>Lorem Ipsum</u> has been the industry's <span style="color: blue; font-weight: bold;">standard</span> dummy text ever <span style="font-weight: bold; color: brown;"><a href="#">LINK</a></span> since the 1500s</p>
         </div>
         <div class="row1">
-            <div class="column1">
-                <img src="/img/hacktiv8.png">
-            </div>
-            <div class="column2">
-                <img src="/img/kode.png">
-            </div>
-            <div class="column3">
-                <img src="/img/wordpress.png">
-            </div>
-            <div class="column4">
-                <img src="/img/google.png">
-            </div>
+            <img src="/img/hacktiv8.png">
+            <img src="/img/kode.png">
+            <img src="/img/wordpress.png">
+            <img src="/img/google.png">
         </div>
         <div id="portofolio" class="portofolio">
             <h2>Portofolio</h2>
@@ -139,5 +131,16 @@
                 <img class="demo cursor" src="img/p12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Portofolio 12">
             </div>
         </div>
+        <div class="blog">
+            <h2>Blog</h2>
+            <div class="post">
+                <img src="/img/p1.jpg">
+                <h3>Judul Postingan</h3>
+                <p>Deskripsi</p>
+            </div>
+        </div>
+        <script src="slideshow.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="umur.js"></script>
     </body>
 </html>

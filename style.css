@@ -65,7 +65,7 @@ p#nama {
     font-size: 18px;
     font-weight: 600;
 }
-p#kota {
+.profil .kota {
     max-width: 65%;
     margin: 10px auto;
     font-size: 14px;
@@ -79,19 +79,12 @@ p#deskripsi {
     text-align: center;
 }
 .row1 {
-    height: 100px;
-    padding-top: 20px;
-    background-color: rgb(211, 255, 248);
+    width: 100%;
+    text-align: center;
+    background-color: rgb(211, 245, 255);
 }
-.column1, .column2, .column3, .column4 {
-    width: 25%;
-    max-width: 25%;
-    display: inline;
-    margin: 38px;
-}
-.column1 img, .column2 img, .column3 img, .column4 img {
-    width: 100px;
-    height: 62px;
+.row1 img {
+    margin: 15px;
 }
 .slideshowgaleri {
     position: relative;
@@ -131,4 +124,11 @@ p#deskripsi {
   
 .active, .demo:hover {
     opacity: 1;
+}
+.blog h2{
+    text-align: center;
+}
+.blog img {
+    width: 20%;
+    float: left;
 }
