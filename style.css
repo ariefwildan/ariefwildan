@@ -157,8 +157,17 @@ p#deskripsi {
 }
 .team1 img {
     border-radius: 50%;
-    border: 2px solid rgb(84, 229, 255)
+    border: 2px solid rgb(163, 163, 163)
 }
 .team h4, p {
     margin: 0px;
+}
+.contact {
+
+}
+.form {
+
+}
+.form input {
+
 }
