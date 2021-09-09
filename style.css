@@ -125,10 +125,40 @@ p#deskripsi {
 .active, .demo:hover {
     opacity: 1;
 }
+.post {
+    margin: 10px;
+    height: 120px;
+}
 .blog h2{
     text-align: center;
+}
+.blog h3 {
+    font-size: 16px;
+}
+.blog p {
+    font-size: 14px;
 }
 .blog img {
     width: 20%;
     float: left;
+    padding: 0px 10px 10px 0px;
+}
+.team {
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    #background-color: rgb(0, 247, 255);
+}
+.team1 {
+    max-width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3.5%;
+}
+.team1 img {
+    border-radius: 50%;
+    border: 2px solid rgb(84, 229, 255)
+}
+.team h4, p {
+    margin: 0px;
 }
