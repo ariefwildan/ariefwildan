@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Latihan Membuat Portofolio</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
@@ -15,11 +16,11 @@
             <div class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portofolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
                 </ul>
             </div>
         </div>
@@ -27,45 +28,119 @@
             <h2>About</h2>
             <img src="/img/pp.jpg">
             <p id="nama">Arief Wildan Hadiansyah</p>
-            <p id="kota">📌 Bandung, Jawa Barat, Maret 1989</p>
+            <p class="kota">📌 Bandung, Jawa Barat, <span id="umur">0</span> tahun</p>
             <p id="deskripsi"><strong>Lorem Ipsum</strong> is simply dummy text of the <em>printing and typesetting</em> industry. <u>Lorem Ipsum</u> has been the industry's <span style="color: blue; font-weight: bold;">standard</span> dummy text ever <span style="font-weight: bold; color: brown;"><a href="#">LINK</a></span> since the 1500s</p>
         </div>
         <div class="row1">
-            <div class="column1">
-                <img src="/img/hacktiv8.png">
-            </div>
-            <div class="column2">
-                <img src="/img/kode.png">
-            </div>
-            <div class="column3">
-                <img src="/img/wordpress.png">
-            </div>
-            <div class="column4">
-                <img src="/img/google.png">
-            </div>
+            <img src="/img/hacktiv8.png">
+            <img src="/img/kode.png">
+            <img src="/img/wordpress.png">
+            <img src="/img/google.png">
         </div>
         <div id="portofolio" class="portofolio">
             <h2>Portofolio</h2>
         </div>
-        <div class="row2">
-            <div class="column5">
-                <img src="/img/p1.jpg">
+        <div class="slideshowgaleri">
+            <div class="mySlides" style="display: block;">
+                <div class="nomortext">1 / 12</div>
+                  <img src="/img/p1.jpg" style="width:100%">
             </div>
-            <div class="column6">
-                <img src="/img/p2.jpg">
+            <div class="mySlides">
+                <div class="nomortext">2 / 12</div>
+                  <img src="/img/p2.jpg" style="width:100%">
             </div>
-            <div class="column7">
-                <img src="/img/p3.jpg">
+            <div class="mySlides">
+                <div class="nomortext">3 / 12</div>
+                  <img src="/img/p3.jpg" style="width:100%">
             </div>
-            <div class="column8">
-                <img src="/img/p4.jpg">
+            <div class="mySlides">
+                <div class="nomortext">4 / 12</div>
+                  <img src="/img/p4.jpg" style="width:100%">
             </div>
-            <div class="column9">
-                <img src="/img/p5.jpg">
+            <div class="mySlides">
+                <div class="nomortext">5 / 12</div>
+                  <img src="/img/p5.jpg" style="width:100%">
             </div>
-            <div class="column10">
-                <img src="/img/p6.jpg">
+            <div class="mySlides">
+                <div class="nomortext">6 / 12</div>
+                  <img src="/img/p6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="nomortext">7 / 12</div>
+                  <img src="/img/p7.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="nomortext">8 / 12</div>
+                  <img src="/img/p8.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="nomortext">9 / 12</div>
+                  <img src="/img/p9.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="nomortext">10 / 12</div>
+                  <img src="/img/p10.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="nomortext">11 / 12</div>
+                  <img src="/img/p11.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="nomortext">12 / 12</div>
+                  <img src="/img/p12.jpg" style="width:100%">
             </div>
         </div>
+        <div class="caption-container">
+            <p id="caption">Portofolio</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="img/p1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Portofolio 1">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/p2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Portofolio 2">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/p3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Portofolio 3">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/p4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Portofolio 4">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/p5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Portofolio 5">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/p6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Portofolio 6">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/p7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Portofolio 7">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/p8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Portofolio 8">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/p9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Portofolio 9">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/p10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Portofolio 10">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/p11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Portofolio 11">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/p12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Portofolio 12">
+            </div>
+        </div>
+        <div class="blog">
+            <h2>Blog</h2>
+            <div class="post">
+                <img src="/img/p1.jpg">
+                <h3>Judul Postingan</h3>
+                <p>Deskripsi</p>
+            </div>
+        </div>
+        <script src="slideshow.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="umur.js"></script>
     </body>
 </html>

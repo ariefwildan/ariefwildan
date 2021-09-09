@@ -65,7 +65,7 @@ p#nama {
     font-size: 18px;
     font-weight: 600;
 }
-p#kota {
+.profil .kota {
     max-width: 65%;
     margin: 10px auto;
     font-size: 14px;
@@ -79,31 +79,56 @@ p#deskripsi {
     text-align: center;
 }
 .row1 {
-    height: 100px;
-    padding-top: 20px;
-    background-color: rgb(211, 255, 248);
+    width: 100%;
+    text-align: center;
+    background-color: rgb(211, 245, 255);
 }
-.column1, .column2, .column3, .column4 {
-    width: 25%;
-    max-width: 25%;
-    display: inline;
-    margin: 38px;
+.row1 img {
+    margin: 15px;
 }
-.column1 img, .column2 img, .column3 img, .column4 img {
-    width: 100px;
-    height: 62px;
+.slideshowgaleri {
+    position: relative;
 }
-.row2 {
-    height: 204px;
-    padding-top: 20px;
-    background-color: rgb(211, 255, 248);
+.mySlides {
+    display: none;
 }
-.column5, .column6, .column7, .column8, .column9, .column10 {
-    max-width: 33%;
-    display: inline;
-    margin: 3px;
+.cursor {
+    cursor: pointer;
 }
-.column5 img, .column6 img, .column7 img, .column7 img, .column7 img, .column img {
-    width: 230px;
-    height: 184px;
+.nomortext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: #000000;
+}
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+    width: 16.66%;
+}
+.demo {
+    opacity: 0.6;
+}
+  
+.active, .demo:hover {
+    opacity: 1;
+}
+.blog h2{
+    text-align: center;
+}
+.blog img {
+    width: 20%;
+    float: left;
 }
