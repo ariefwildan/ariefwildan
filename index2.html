@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -12,8 +11,10 @@
     <style>
 body {
     font-family: 'Ubuntu', sans-serif;
-    background: rgb(32,59,172);
-    background: linear-gradient(225deg, rgba(32,59,172,1) 0%, rgba(20,34,75,1) 100%);
+    background: linear-gradient(90deg,#021048,#1e38a3)
+}
+* {
+    box-sizing: border-box;
 }
 .wrapper {
     max-width: 600px;
@@ -32,14 +33,21 @@ body {
       rgba(0, 0, 0, 0)
     ) 1 0%;
 }
-.judul {
-    color: rgb(219, 219, 219);
-    float: left;
+.header {
+    display: grid;
+  grid-template-columns: auto 25%;
 }
-.iconlogin {
+.logo {
+    color: rgb(219, 219, 219);
+}
+.iconlogin img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
     float: right;
-    width: 20px;
-    height: 20px;
+    margin-top: 20px;
+    margin-right: 5px;
+    border: 2px solid rgb(133, 133, 133)
 }
 .fotoprofil {
     border-radius: 50%;
@@ -68,9 +76,14 @@ body {
 </head>
 <body>
     <div class="wrapper">
-        <h1 class="judul">Portofolio</h1>
-        <img class="iconlogin" src="/img/pin.png">
-        
+        <div class="header">
+            <div class="logo">
+                <h1>Portofolio</h1>
+            </div>
+            <div class="iconlogin">
+                <img src="/img/pp.jpg">
+            </div>
+        </div>
         <div id="profile" class="profile">
             <img class="fotoprofil" src="/img/pp.jpg">
             <h2 class="nama">Arief Wildan H</h2>

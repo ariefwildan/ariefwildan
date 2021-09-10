@@ -162,3 +162,13 @@ p#deskripsi {
 .team h4, p {
     margin: 0px;
 }
+.contact {
+    float: none;
+    margin: 0 auto;
+    flex-direction: row wrap;
+    display: flex;
+    
+}
+.formulir {
+    padding: 25px;
+}
