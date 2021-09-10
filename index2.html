@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Portofolio Arief Wildan</title>
+    <style>
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(32,59,172);
+    background: linear-gradient(225deg, rgba(32,59,172,1) 0%, rgba(20,34,75,1) 100%);
+}
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.profile {
+    text-align: center;
+    padding: 20px;
+    margin: 5px auto;
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to right, 
+      rgb(255, 255, 255), 
+      rgba(0, 0, 0, 0)
+    ) 1 0%;
+}
+.judul {
+    color: rgb(219, 219, 219);
+    float: left;
+}
+.iconlogin {
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+.fotoprofil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: double 8px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #00ffff,#6e118a);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.nama {
+    color: rgb(219, 219, 219);
+    text-shadow: 1px 1px 3px orange;
+}
+.kota {
+    color: rgb(219, 219, 219);
+}
+.about {
+    padding: 10px;
+    text-align: center;
+}
+.deskripsi {
+    color: rgb(219, 219, 219);
+}
+    </style>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <h1 class="judul">Portofolio</h1>
+        <img class="iconlogin" src="/img/pin.png">
+        
+        <div id="profile" class="profile">
+            <img class="fotoprofil" src="/img/pp.jpg">
+            <h2 class="nama">Arief Wildan H</h2>
+            <p class="kota">Bandung, Jawa Barat. <span id="umur">0</span> tahun</p>
+            <p class="deskripsi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+        <div class="about">
+            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="umur.js"></script>
 </body>
 </html>
