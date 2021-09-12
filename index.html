@@ -11,7 +11,7 @@
     <style>
 body {
     font-family: 'Ubuntu', sans-serif;
-    background: linear-gradient(90deg,#021048,#1e38a3)
+    margin: 0 auto
 }
 * {
     box-sizing: border-box;
@@ -19,6 +19,8 @@ body {
 .wrapper {
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 10px;
+    background: linear-gradient(90deg,#021048,#132d96);
 }
 .profile {
     text-align: center;
@@ -35,7 +37,7 @@ body {
 }
 .header {
     display: grid;
-  grid-template-columns: auto 25%;
+    grid-template-columns: auto 25%;
 }
 .logo {
     color: rgb(219, 219, 219);
@@ -72,6 +74,66 @@ body {
 .deskripsi {
     color: rgb(219, 219, 219);
 }
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
     </style>
 </head>
 <body>
@@ -90,11 +152,64 @@ body {
             <p class="kota">Bandung, Jawa Barat. <span id="umur">0</span> tahun</p>
             <p class="deskripsi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
         </div>
-        <div class="about">
-            
+        <div id="portofolio" class="slideshow-container">
+            <h2 style="text-align: center; color: white;">Portofolio</h2>
+            <div class="mySlides fade">
+                <img src="img/p1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/p2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/p3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/p4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/p5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/p6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/p7.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/p8.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/p9.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/p10.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/p11.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/p12.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+        </div>  
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="umur.js"></script>
+    <script src="slideshow.js"></script>
 </body>
 </html>
