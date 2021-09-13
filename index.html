@@ -7,11 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Portofolio Arief Wildan</title>
     <style>
 body {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
-    margin: 0 auto
 }
 * {
     box-sizing: border-box;
@@ -187,8 +191,8 @@ input[type=text], input[type=number], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    font-size: 15px;
 }
-
 input[type=submit] {
     background-color: #04AA6D;
     color: white;
@@ -197,9 +201,16 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-
 input[type=submit]:hover {
     background-color: #45a049;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }
     </style>
 </head>
@@ -210,11 +221,11 @@ input[type=submit]:hover {
                 <h1>Portofolio</h1>
             </div>
             <div class="iconlogin">
-                <img src="/img/pp.jpg">
+                <img src="/img/pp.webp">
             </div>
         </div>
         <div id="profile" class="profile">
-            <img class="fotoprofil" src="/img/pp.jpg">
+            <img class="fotoprofil" src="/img/pp.webp">
             <h2 class="nama">Arief Wildan H</h2>
             <p class="kota">Bandung, Jawa Barat. <span id="umur">0</span> tahun</p>
             <p class="deskripsi">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
@@ -222,40 +233,40 @@ input[type=submit]:hover {
         <div id="portofolio" class="slideshow-container">
             <h2 style="text-align: center; color: white;">Portofolio</h2>
             <div class="mySlides fade">
-                <img src="img/p1.jpg" style="width:100%">
+                <img src="img/p1.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="img/p2.jpg" style="width:100%">
+                <img src="img/p2.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="img/p3.jpg" style="width:100%">
+                <img src="img/p3.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="img/p4.jpg" style="width:100%">
+                <img src="img/p4.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="img/p5.jpg" style="width:100%">
+                <img src="img/p5.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="img/p6.jpg" style="width:100%">
+                <img src="img/p6.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="img/p7.jpg" style="width:100%">
+                <img src="img/p7.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="img/p8.jpg" style="width:100%">
+                <img src="img/p8.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="img/p9.jpg" style="width:100%">
+                <img src="img/p9.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="img/p10.jpg" style="width:100%">
+                <img src="img/p10.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="img/p11.jpg" style="width:100%">
+                <img src="img/p11.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="img/p12.jpg" style="width:100%">
+                <img src="img/p12.webp" style="width:100%">
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -277,7 +288,7 @@ input[type=submit]:hover {
         <h2 style="text-align: center; color: white;">Blog</h2>
         <div class="blog">
             <div>
-                <img src="/img/p1.jpg">
+                <img src="/img/p1.webp">
             </div>
             <div>
                 <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
@@ -285,7 +296,7 @@ input[type=submit]:hover {
         </div>
         <div class="blog">
             <div>
-                <img src="/img/p2.jpg">
+                <img src="/img/p2.webp">
             </div>
             <div>
                 <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
@@ -293,7 +304,7 @@ input[type=submit]:hover {
         </div>
         <div class="blog">
             <div>
-                <img src="/img/p3.jpg">
+                <img src="/img/p3.webp">
             </div>
             <div>
                 <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
@@ -301,7 +312,7 @@ input[type=submit]:hover {
         </div>
         <div class="blog">
             <div>
-                <img src="/img/p4.jpg">
+                <img src="/img/p4.webp">
             </div>
             <div>
                 <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
@@ -309,7 +320,7 @@ input[type=submit]:hover {
         </div>
         <div class="blog">
             <div>
-                <img src="/img/p5.jpg">
+                <img src="/img/p5.webp">
             </div>
             <div>
                 <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
@@ -319,28 +330,28 @@ input[type=submit]:hover {
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <img src="/img/pp.jpg">
+                    <img src="/img/pp.webp">
                     <h3>Card 1</h3>
                     <p>Some text</p>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
-                    <img src="/img/pp.jpg">
+                    <img src="/img/pp.webp">
                     <h3>Card 2</h3>
                     <p>Some text</p>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
-                    <img src="/img/pp.jpg">
+                    <img src="/img/pp.webp">
                     <h3>Card 3</h3>
                     <p>Some text</p>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
-                    <img src="/img/pp.jpg">
+                    <img src="/img/pp.webp">
                     <h3>Card 4</h3>
                     <p>Some text</p>
                 </div>
@@ -357,6 +368,20 @@ input[type=submit]:hover {
                 <textarea name="pesan" id="pesan" cols="30" rows="10" placeholder="Keperluan Anda"></textarea>
             </form>
             <input type="submit" value="Submit Via Whatsapp">
+        </div>
+        <div class="row4">
+            <div class="column4">
+                <h2>Column 1</h2>
+            </div>
+            <div class="column4">
+                <h2>Column 2</h2>
+            </div>
+            <div class="column4">
+                <h2>Column 3</h2>
+            </div>
+            <div class="column4">
+                <h2>Column 4</h2>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
