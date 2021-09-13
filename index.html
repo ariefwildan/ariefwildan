@@ -176,10 +176,30 @@ body {
 }
 .formulir {
     color: white;
-    margin: 0 70px 0 70px;
+    margin: 0 30px 0 30px;
 }
-input, label {
+input[type=text], input[type=number], select, textarea {
     width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
     </style>
 </head>
@@ -334,11 +354,10 @@ input, label {
                 <label for="nomor">Nomor Whatsapp</label><br>
                 <input type="number" id="nomor" name="nomor" placeholder="Nomor Whatsapp Anda"><br>
                 <label for="pesan">Pesan</label><br>
-                <input type="text" id="pesan" name="pesan" placeholder="Keperluan Anda" style="height: 100px;">
+                <textarea name="pesan" id="pesan" cols="30" rows="10" placeholder="Keperluan Anda"></textarea>
             </form>
             <input type="submit" value="Submit">
         </div>
-
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="umur.js"></script>
