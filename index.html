@@ -168,11 +168,16 @@ body {
 }
 .card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 .card h3, p {
     margin: 0px;
     padding: 5px;
+}
+.formulir {
+    color: white;
+    text-align: center;
+    margin: 10px;
 }
     </style>
 </head>
@@ -319,6 +324,18 @@ body {
                 </div>
             </div>
         </div>
+        <div id="formulir" class="formulir">
+            <h3>Kontak Formulir</h3>
+            <form action="">
+                <label for="nama">Nama</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Nama Anda"><br>
+                <label for="nomor">Nomor Whatsapp</label><br>
+                <input type="number" id="nomor" name="nomor" placeholder="Nomor Whatsapp Anda"><br>
+                <label for="pesan">Pesan</label><br>
+                <input type="text" id="pesan" name="pesan" placeholder="Keperluan Anda" style="height: 100px;">
+            </form>
+        </div>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="umur.js"></script>
