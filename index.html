@@ -206,11 +206,24 @@ input[type=submit]:hover {
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
+}
+.column4 {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+.row4:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column4 img {
+    width: 90px;
 }
     </style>
 </head>
@@ -371,16 +384,16 @@ input[type=number] {
         </div>
         <div class="row4">
             <div class="column4">
-                <h2>Column 1</h2>
+                <img src="/img/hacktiv8.webp" alt="">
             </div>
             <div class="column4">
-                <h2>Column 2</h2>
+                <img src="/img/kode.webp" alt="">
             </div>
             <div class="column4">
-                <h2>Column 3</h2>
+                <img src="/img/wordpress.webp" alt="">
             </div>
             <div class="column4">
-                <h2>Column 4</h2>
+                <img src="/img/google.webp" alt="">
             </div>
         </div>
     </div>
