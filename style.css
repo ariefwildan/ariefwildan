@@ -267,7 +267,8 @@ footer {
     text-decoration: none;
 }
 .logo img {
-    width: 150px;
+    width: 100px;
+    margin: 10px;
 }
 a:link, a:active, a:visited {
     text-decoration: none;
