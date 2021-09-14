@@ -269,3 +269,16 @@ footer {
 .logo img {
     width: 150px;
 }
+a:link, a:active, a:visited {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+}
+a:active {
+    color: rgb(245, 118, 0);
+}
+.article {
+    color: white;
+}
