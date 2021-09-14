@@ -1,4 +1,5 @@
-$(document).on('click','.submit', function(e){
+$(document).on('submit','form', function(e){
+    e.preventDefault();
     var input_blanter = document.getElementById('nomor');
     
     /* Whatsapp Settings */
@@ -29,7 +30,6 @@ $(document).on('click','.submit', function(e){
     window.open(blanter_whatsapp,'_blank');
     
     } else {
-        e.preventDefault;
         document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</span>';
     }
     });
