@@ -3,7 +3,7 @@ $(document).on('click','.submit', function(){
     
     /* Whatsapp Settings */
     var walink = 'https://web.whatsapp.com/send',
-        phone = '6281977094280',
+        phone = '6281320636964',
         walink2 = 'Halo saya ingin ',
         text_yes = 'Terima Kasih. Pesan Anda akan segera saya respon',
         text_no = 'Isi semua Formulir lalu klik Submit.';
