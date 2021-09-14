@@ -1,10 +1,10 @@
 $(document).on('click','.submit', function(){
-    var input_blanter = document.getElementById('wa_email');
+    var input_blanter = document.getElementById('formulir');
     
     /* Whatsapp Settings */
     var walink = 'https://web.whatsapp.com/send',
         phone = '6281320636964',
-        walink2 = 'Halo saya ingin ',
+        walink2 = 'Halo saya',
         text_yes = 'Terima Kasih. Pesan Anda akan segera saya respon',
         text_no = 'Isi semua Formulir lalu klik Submit.';
     
