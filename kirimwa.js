@@ -1,11 +1,10 @@
 $(document).on('click','.submit', function(){
-    var input_blanter = document.getElementById('formulir');
+    var input_blanter = document.getElementById('nomor');
     
     /* Whatsapp Settings */
     var walink = 'https://web.whatsapp.com/send',
         phone = '6281320636964',
         walink2 = 'Halo saya',
-        text_yes = 'Terima Kasih. Pesan Anda akan segera saya respon',
         text_no = 'Isi semua Formulir lalu klik Submit.';
     
     /* Smartphone Support */
@@ -28,8 +27,7 @@ $(document).on('click','.submit', function(){
     
     /* Whatsapp Window Open */
     window.open(blanter_whatsapp,'_blank');
-    document.getElementById("text-info").innerHTML = '<span class="yes">'+text_yes+'</span>';
-    } else {
-    document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</span>';
+    
+    } else {document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</span>';
     }
     });
